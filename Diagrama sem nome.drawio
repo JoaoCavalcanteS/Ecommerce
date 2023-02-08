@@ -1,1 +1,31 @@
-<mxfile host="app.diagrams.net" modified="2023-02-07T23:25:14.597Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" version="20.8.18" etag="GFCjXXdsiP2gQN6jPRHm" type="github"><diagram name="Página-1" id="QV9OyJ6WM-OUSLe9Kgma">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-02-08T01:02:36.443Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="h8X6eSGYGK5ieJeEWuht" version="20.8.18" type="github">
+  <diagram name="Página-1" id="QV9OyJ6WM-OUSLe9Kgma">
+    <mxGraphModel dx="1434" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BrylzMbHflq9uRsznijv-1" value="PRODUTOS:&lt;br&gt;idProduto&lt;br&gt;nomeProduto&lt;br&gt;tamanho&lt;br&gt;cores&lt;br&gt;qtEstoque&lt;br&gt;valor" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="100" y="141" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="BrylzMbHflq9uRsznijv-2" value="LOJA DE ROUPAS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="30" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BrylzMbHflq9uRsznijv-4" value="ENDEREÇO:&lt;br&gt;idUsuario&lt;br&gt;CEP&lt;br&gt;nCasa&lt;br&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="390" y="190" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BrylzMbHflq9uRsznijv-5" value="CARRINHO:&lt;br&gt;idCarrinho&lt;br&gt;valor&lt;br&gt;desconto&lt;br&gt;frete" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="270" y="320" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BrylzMbHflq9uRsznijv-6" value="USUÁRIO:&lt;br&gt;idUsuario&lt;br&gt;email&lt;br&gt;senha" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="270" y="190" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BrylzMbHflq9uRsznijv-7" value="ITEM&lt;br&gt;idProduto&lt;br&gt;idCarrinho&lt;br&gt;qtItem&lt;br&gt;valor" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="126" y="340" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BrylzMbHflq9uRsznijv-8" value="IMAGEM&lt;br&gt;idProduto&lt;br&gt;idImagem" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="400" y="320" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
