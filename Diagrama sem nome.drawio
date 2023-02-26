@@ -1,17 +1,17 @@
-<mxfile host="app.diagrams.net" modified="2023-02-25T23:14:47.044Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="nC2sk9H4tO4iWtlAfPlC" version="20.8.23" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-26T16:23:48.441Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="jbQuUHC4HV9gCryxdPmi" version="20.8.23" type="github">
   <diagram name="Página-1" id="QV9OyJ6WM-OUSLe9Kgma">
-    <mxGraphModel dx="1886" dy="788" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1674" dy="788" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="BrylzMbHflq9uRsznijv-2" value="LOJA DE CAMISETAS DE ESPORTE" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="380" width="120" height="50" as="geometry" />
+          <mxGeometry x="240" y="270" width="120" height="50" as="geometry" />
         </mxCell>
         <mxCell id="y2k0_KToHDkStj43ko6D-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="y2k0_KToHDkStj43ko6D-22" target="y2k0_KToHDkStj43ko6D-32" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="y2k0_KToHDkStj43ko6D-22" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;PRODUTOS&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id PRODUTO&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;nomeProduto&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;tamanho&lt;br&gt;cor&lt;br&gt;QntEstoque&lt;br&gt;valor&lt;br&gt;marca&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
-          <mxGeometry x="390" y="360" width="180" height="160" as="geometry" />
+          <mxGeometry x="324" y="350" width="180" height="160" as="geometry" />
         </mxCell>
         <mxCell id="y2k0_KToHDkStj43ko6D-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="y2k0_KToHDkStj43ko6D-24" target="y2k0_KToHDkStj43ko6D-32" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -19,10 +19,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="y2k0_KToHDkStj43ko6D-24" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;CARRINHO&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;usuario&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;carrinho&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;valor&lt;br&gt;desconto&lt;br&gt;frete&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
-          <mxGeometry y="515" width="180" height="140" as="geometry" />
+          <mxGeometry x="20" y="542.5" width="180" height="140" as="geometry" />
         </mxCell>
         <mxCell id="y2k0_KToHDkStj43ko6D-27" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;ENDEREÇO&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;br&gt;FK&lt;/td&gt;&lt;td&gt;endereço&lt;br&gt;usuario&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;cep&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;numresidencial&lt;br&gt;complemento&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
-          <mxGeometry x="600" y="575" width="180" height="145" as="geometry" />
+          <mxGeometry x="440" y="537.5" width="180" height="145" as="geometry" />
         </mxCell>
         <mxCell id="y2k0_KToHDkStj43ko6D-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="y2k0_KToHDkStj43ko6D-29" target="y2k0_KToHDkStj43ko6D-24" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -31,12 +31,12 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="y2k0_KToHDkStj43ko6D-29" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;USUARIO&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;usuario&lt;br&gt;&lt;br&gt;nomeUsuario&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;email&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;senha&lt;br&gt;flAfmin&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
-          <mxGeometry x="330" y="585" width="180" height="155" as="geometry" />
+          <mxGeometry x="234" y="535" width="180" height="155" as="geometry" />
         </mxCell>
         <mxCell id="y2k0_KToHDkStj43ko6D-32" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;ITEM&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PFK&lt;/td&gt;&lt;td&gt;produto&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PFK&lt;/td&gt;&lt;td&gt;carrinho&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;item&lt;br&gt;valor&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
-          <mxGeometry x="90" y="310" width="180" height="90" as="geometry" />
+          <mxGeometry x="110" y="370" width="180" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="4iyZ1k8OJQ0HGDT-F3Ni-1" value="r" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="4iyZ1k8OJQ0HGDT-F3Ni-1" value="r" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="40" y="960" as="sourcePoint" />
             <mxPoint x="120" y="960" as="targetPoint" />
