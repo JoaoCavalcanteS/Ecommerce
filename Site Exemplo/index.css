@@ -1,0 +1,25 @@
+#img1{
+    float: left;
+}
+
+.bicicleta-lista > ul{
+    list-style: none;
+}
+
+/**/
+.moto > ul {
+    list-style: none;
+}
+
+.moto li{
+    display: inline;
+}
+
+.carousel-caption {
+    position: static;
+    width: 100%;
+}
+
+.center-content {
+    text-align: center;
+}
