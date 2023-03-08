@@ -6,7 +6,7 @@
     list-style: none;
 }
 
-/**/
+/*Link do css lista*/
 .moto > ul {
     list-style: none;
 }
@@ -22,4 +22,8 @@
 
 .center-content {
     text-align: center;
+}
+
+#floater{
+    background-color: aqua;
 }
