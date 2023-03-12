@@ -27,3 +27,15 @@
 #floater{
     background-color: aqua;
 }
+
+.botao{
+    text-align: center;
+}
+
+.produtos{
+    width: 100%;
+    margin-top: 10px;
+    /*Alinhamento do texto...*/
+    text-align: center;
+    padding: 10%;
+}
