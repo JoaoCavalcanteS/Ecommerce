@@ -38,6 +38,14 @@
     padding: 10%;
 }
 
-/* #floater{
+#floater{
     background-color: black;
-} */
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+}
+
+/*Essa faz com que a lista seja removida*/
+li{
+    list-style:none
+}
