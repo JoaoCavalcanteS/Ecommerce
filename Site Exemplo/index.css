@@ -24,10 +24,6 @@
     text-align: center;
 }
 
-#floater{
-    background-color: aqua;
-}
-
 .botao{
     text-align: center;
 }
@@ -37,5 +33,11 @@
     margin-top: 10px;
     /*Alinhamento do texto...*/
     text-align: center;
+    /*Caso vc queira ajustar o tamanho dos seus produtos ou até mesmo diminuir 
+    coloca o padding que ele vai ajudar*/
     padding: 10%;
 }
+
+/* #floater{
+    background-color: black;
+} */

@@ -16,49 +16,53 @@
 
         <!-- Barra de navegação -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="./IMG/logo-favicon.png" width="50px"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Loja</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Ver mais
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Camisetas</a></li>
-                      <li><a class="dropdown-item" href="#">Carros</a></li>
-                      <li><a class="dropdown-item" href="#">F1</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#"></a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Delta</a>
+            <!--<a class="navbar-brand" href="#"><img src="./IMG/logo-favicon.png" width="20%">Delta F1</a>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                  <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-              </div>
             </div>
-          </nav>
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Login/Cadastro
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><form>
+                      <div class="row mb-3">
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-sm-10">
+                          <input type="password" class="form-control" id="inputPassword3" placeholder="Senha">
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Entrar</button>
+                    </form></li>
+  
+                    <!-- <li><a class="dropdown-item" href="#">Another action</a></li> -->
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Cadastre-se</a></li>
+                  </ul>
+                </li>
+                <ul>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+            </ul>
+          </div>
+      </nav>
           <br>
           
-          <!-- Arrumar lista, retirar os pontos, alinhar na horizontal, colocar fundo, mudar a fonte, mudar as cores.-->
-          <!-- <article class="bicicleta-lista">
-            <ul>
-                <li>Mais vendidos</li>
-                <li>Vestuarios</li>
-                <li>Bones</li>
-                <li>Acessorios</li>
-                <li>Tenis</li>
-            </ul>
-            </article> -->
-
             <!--Analisar os botôes, pois cada um pode ter uma submissão diferente-->
           <div class="botao">
             <a class="btn btn-primary" href="#" role="button">Home</a>
@@ -79,7 +83,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="d-block center-content">
-                            <img src="./IMG/img4.jfif" alt="..." height="500" >
+                            <img src="./IMG/img2.jfif" alt="..." height="500" >
                         </div>
                         <div class="carousel-caption d-none d-md-block">
                             <h5 style="color: black;">Promoções do dia.</h5>
@@ -88,7 +92,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="d-block center-content">
-                            <img src="./IMG/img3.jfif" alt="..." height="500" >
+                            <img src="./IMG/img2.jfif" alt="..." height="500" >
                         </div>
                         <div class="carousel-caption d-none d-md-block">
                             <h5 style="color: black;">Camisetas esportivas.</h5>
@@ -196,6 +200,8 @@
               <!--Floater-->
               <div id="floater">
 
+                <input type="text">Email
+                <button id="email">Buscar</button>
               </div>
 
     </body>
