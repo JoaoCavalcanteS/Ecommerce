@@ -20,6 +20,19 @@
     width: 100%;
 }
 
+.carousel-indicators{
+    background-color: rgb(35, 15, 212);
+}
+
+/* .carrosselw{
+    background-color: aquamarine;
+} */
+
+.carousel-inner{
+    background-image: linear-gradient(white,blueviolet);
+    border:4px black;
+}
+
 .center-content {
     text-align: center;
 }
@@ -49,3 +62,18 @@
 li{
     list-style:none
 }
+
+/* configuração do modal posição */
+.modal {
+    width: 300px;
+  }
+  .modal-content {
+    width: 300px;
+  }
+  .list-group-item:hover {
+    background-color: rgba(59, 57, 57, 0.164) !important;
+  }
+  #carouselExample{
+    display:flex;
+    
+  }
