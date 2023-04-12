@@ -1,3 +1,5 @@
+@extends('layout.app')
+    @section('main')
 
           <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
@@ -52,11 +54,12 @@
             @foreach(\App\Models\Produto::all()->take(1) as $produto)
                 <div class="col">
                     <div class="card">
-                        <img src="" class="card-img-top" alt="...">
+                        <img src="{{$produto->produtoImagem}}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">{{$produto->nome}}</h5>
                             <p class="card-text">{{$produto->descricao}}</p>
-                            <a href=""><button type="submit" id="botaocard">Comprar</button></a>
+                            <a href="{{route('produto.show', $produto->produtoId)}}"><button type="submit" id="botaocard">Comprar</button></a>
+                            <!-- <a href="/produto/{{$produto->produtoId}}"><button type="submit" id="botaocard">Comprar</button></a> -->
                         </div>
                     </div>
                 </div>
@@ -139,4 +142,6 @@
                             </div>
                             </div>
                             </section>
+@endsection
+
 

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Produto;
 use Illuminate\Http\Request;
 
 class ProdutoController extends Controller
@@ -17,7 +18,7 @@ class ProdutoController extends Controller
      // dd($produto);
      // retorna só um produto
       //return view('produto.show')->with('produto',$produto);
-      $maisProdutos = Categoria::find($produto->CATEGORIA_ID)->Produtos;
+      $maisProdutos = []; //Categoria::find($produto->CATEGORIA_ID)->Produtos;
       return view ('produto.show', ['produto' =>$produto,'maisProdutos' => $maisProdutos]);
 
     }

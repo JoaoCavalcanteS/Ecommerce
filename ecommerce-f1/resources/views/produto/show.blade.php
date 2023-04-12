@@ -24,7 +24,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
-    <title>{{$produto->PRODUTO_NOME}}</title>
+    <title>{{$produto->nome}}</title>
 </head>
 
 <body>
@@ -90,21 +90,18 @@
     <main>
         <div class="content">
             <div class="left-side">
-                <h1>{{$produto->PRODUTO_NOME}}</h1>
+                <h1>{{$produto->nome}}</h1>
 
                 <p>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">{{$produto->PRODUTO_DESC}}</li>
-                        <li class="list-group-item">{{$produto->Categoria->CATEGORIA_NOME}}</li>
+                        <li class="list-group-item">{{$produto->descricao}}</li>
+                        <!-- <li class="list-group-item">{{$produto->Categoria->CATEGORIA_NOME}}</li> -->
                     </ul>
                 </p>
-                <span>Quantidade disponivel:{{$produto->ProdutoEstoque}}</span>
-                <span>Valor original:R${{$produto->PRODUTO_PRECO}} </span>
-                <span>Desconto:R${{$produto->PRODUTO_DESCONTO}}</span><br><br>
-                <span>{{\App\Models\Categoria::find($produto->CATEGORIA_ID)->Produtos}}</span>
-
-                <!--ira filtrar todos os produtos com a mesma categoria do produto da tela-->
-                <span>Valor do produto com desconto: R${{$produto->PRODUTO_PRECO - $produto->PRODUTO_DESCONTO}}</span><br><br><br>
+                <span>Quantidade disponivel:{{$produto->qtdEstoque}}</span>
+                <span>Valor original:R${{$produto->valor}} </span>
+            
+                <span>Valor do produto com desconto: R${{$produto->PRODUTO_PRECO - 10}}</span><br><br><br>
 
                 <a class="btn btn-primary" href="#" role="button">ADICIONAR AO CARRINHO</a>
 
