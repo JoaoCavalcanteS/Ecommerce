@@ -1,0 +1,43 @@
+-- SQLite
+-- SQLite
+CREATE TABLE CARRINHO(
+    carrinhoId INTEGER PRIMARY KEY AUTOINCREMENT,
+    usuarioId INTEGER NOT NULL,
+    valor NUMERIC NOT NULL,
+    desconto NUMERIC NOT NULL,
+    frete NUMERIC NOT NULL,
+    FOREIGN KEY (usuarioId) REFERENCES USUARIO (usuarioId)
+);
+CREATE TABLE ENDERECO (
+    usuarioId INTEGER NOT NULL,
+    endereco TEXT NOT NULL,
+    cep TEXT NOT NULL,
+    numResidencia NUMERIC NOT NULL,
+    complemento TEXT NOT NULL,
+    FOREIGN KEY (usuarioId) REFERENCES USUARIO (usuarioId)
+);
+CREATE TABLE ITEM (
+    produtoId NUMERIC NOT NULL,
+    carrinhoId NUMERIC NOT NULL,
+    item NUMERIC NOT NULL,
+    valor NUMERIC NOT NULL,
+    FOREIGN KEY (produtoId) REFERENCES PRODUTO (produtoId),
+    FOREIGN KEY (carrinhoId) REFERENCES CARRINHO (carrinhoId)
+);
+CREATE TABLE PRODUTO(
+    produtoId INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome TEXT NOT NULL,
+    descricao TEXT NOT NULL,
+    tamanho TEXT NOT NULL,
+    cor TEXT NOT NULL,
+    qtdEstoque NUMERIC NOT NULL,
+    valor NUMERIC NOT NULL,
+    marca TEXT NOT NULL
+);
+CREATE TABLE USUARIO (
+    usuarioId INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome TEXT NOT NULL,
+    email TEXT NOT NULL,
+    senha NUMERIC NOT NULL,
+    flAdmin NUMERIC NOT NULL
+);
