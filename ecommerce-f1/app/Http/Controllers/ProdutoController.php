@@ -18,9 +18,48 @@ class ProdutoController extends Controller
      // dd($produto);
      // retorna só um produto
       //return view('produto.show')->with('produto',$produto);
-      $maisProdutos = []; //Categoria::find($produto->CATEGORIA_ID)->Produtos;
-      return view ('produto.show', ['produto' =>$produto,'maisProdutos' => $maisProdutos]);
+      $categorias = []; //Categoria::find($produto->CATEGORIA_ID)->Produtos;
+      return view ('produto.show', ['produto' =>$produto,'categorias' => $categorias]);
 
+    }
+    public function create(){
+      return view ('produto.create', ['categorias' => []]);
+    }
+    public function store(Request $request){
+      $produto = new Produto();
+      $produto->nome = $request->nome;
+      $produto->descricao = $request->descricao;
+      $produto->tamanho = $request->tamanho;
+      $produto->cor = $request->cor;
+      $produto->qtdEstoque = $request->qtdEstoque;
+      $produto->valor = $request->valor;
+      $produto->marca = $request->marca;
+      $produto->produtoImagem = $request->produtoImagem;
+      $produto->save();
+
+      return redirect ('produto');
+    }
+
+    public function edit (Produto $produto){
+      return view ('produto.edit', ['produto' => $produto,'categorias' => []]);
+    }
+    public function update(Request $request, Produto $produto){
+      $produto->nome = $request->nome;
+      $produto->descricao = $request->descricao;
+      $produto->tamanho = $request->tamanho;
+      $produto->cor = $request->cor;
+      $produto->qtdEstoque = $request->qtdEstoque;
+      $produto->valor = $request->valor;
+      $produto->marca = $request->marca;
+      $produto->produtoImagem = $request->produtoImagem;
+      $produto->save();
+
+      return redirect ('produto');
+    }
+
+    public function destroy (Produto $produto){
+      $produto->delete();
+      return redirect ('produto');
     }
 
 }
