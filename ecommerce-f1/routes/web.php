@@ -17,6 +17,7 @@ use App\Http\Controllers\ProdutoController;
 Route::get('/', function () {
     return view('welcome');
 });
+//PRODUTO
 Route::get('/produto',[ProdutoController::class,'index']);// controllee-class-funcão dentro da controller(site)
 Route::get("/produto/create", [ProdutoController::class, "create"]);
 Route::get('/produto/{produto}',[ProdutoController::class,'show'])->name('produto.show');//aqui , no servidor,
@@ -24,4 +25,12 @@ Route::post("/produto/create", [ProdutoController::class, "store"]);
 Route::get("/produto/{produto}/edit", [ProdutoController::class, "edit"]);
 Route::post("/produto/{produto}/edit", [ProdutoController::class, "update"]);
 Route::post("/produto/{produto}/destroy", [ProdutoController::class, "destroy"]);
-//será produto/1
+
+//USUARIOS
+Route::get('/produto',[ProdutoController::class,'index']);// controllee-class-funcão dentro da controller(site)
+Route::get("/produto/create", [ProdutoController::class, "create"]);
+Route::get('/produto/{user}',[ProdutoController::class,'show'])->name('produto.show');//aqui , no servidor,
+Route::post("/produto/create", [ProdutoController::class, "store"]);
+Route::get("/produto/{user}/edit", [ProdutoController::class, "edit"]);
+Route::post("/produto/{user}/edit", [ProdutoController::class, "update"]);
+Route::post("/produto/{user}/destroy", [ProdutoController::class, "destroy"]);
