@@ -20,7 +20,7 @@
     </form>
 <main>
     <h2>PRODUTOS</h2>
-    <table border='1'>
+    <table width="60%" border='1'>
         <thead>
             <tr>
                 <th>nome</th>

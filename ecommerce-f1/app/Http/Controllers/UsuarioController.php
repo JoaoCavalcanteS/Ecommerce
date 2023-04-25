@@ -30,7 +30,7 @@ class UsuarioController extends Controller
       $usuarios->email = $request->email;
       $usuarios->senha = $request->senha;
       $usuarios->flAdmin = $request->flAdmin;
-      $usuarios->save();
+    $usuarios->save();
 
       return redirect ('usuario');
     }
@@ -43,12 +43,12 @@ class UsuarioController extends Controller
         $usuarios->email = $request->email;
         $usuarios->senha = $request->senha;
         $usuarios->flAdmin = $request->flAdmin;
-      $usuarios->save();
+        $usuarios->save();
 
       return redirect ('usuario');
     }
 
-    public function destroy (Usuario $usuarios){
+    public function destroy (User $usuarios){
       $usuarios->delete();
       return redirect ('usuario');
     }

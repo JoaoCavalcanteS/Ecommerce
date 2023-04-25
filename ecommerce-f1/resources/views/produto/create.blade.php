@@ -6,7 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<Style>
+    .container {
+        width: 400px;
+        margin: 0 auto;
+        border: 1px solid black;
+        padding: 20px;
+        text-align: center;
+        background-color: aqua;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    label, input, textarea {
+        margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+</Style>
 <body>
+    <div class="container">
     <form action="/produto/create" method="post">
         @csrf
         <label for="">nome</label>
@@ -27,5 +61,6 @@
         <input type="text" name="produtoImagem">
         <button type="submit">Salvar</button>
     </form>
+    </div>
 </body>
 </html>

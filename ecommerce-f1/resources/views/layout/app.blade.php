@@ -44,9 +44,9 @@
                 <li><a href="/" class="active">Home</a></li>
                 <li><a href="#">Mais vendidos</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Contato</a></li>
                 <li><a href="usuario">Usuarios</a></li>
                 <li><a href="produto">Produtos</a></li>
+                <li><a href="endereco">Endereços</a></li>
 
             </ul>
             @if(!Auth::check())
@@ -82,7 +82,7 @@
         <main>@yield('main')</main>
           <!--Floater-->
   <div id="floater">
-                <h2>Delta</h2>
+                <h2>E-F1</h2>
                 <input type="text" placeholder="seu nome">
                 <input type="email" placeholder="seu email">
                 <button id="email">Enviar</button>

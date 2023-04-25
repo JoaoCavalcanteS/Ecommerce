@@ -1,16 +1,16 @@
 @extends('layout.app')
     @section('main')
     <script>
-        function criarProduto() {
+        function criarUsuario() {
             window.location = `/usuario/create`;
         }
         function atualizarUsuario(usuarioId) {
             window.location = `/usuario/${usuarioId}/edit`;
         }
-        function excluirProduto(idProduto) {
+        function excluirUsuario(usuarioId) {
             if (!confirm("Você tem certeza")) return;
             const form = document.getElementById("deletar");
-            form.setAttribute("action", `/produto/${idProduto}/destroy`);
+            form.setAttribute("action", `/usuario/${usuarioId}/destroy`);
             form.submit();
             //window.location = `/produto/${idProduto}/destroy`;
         }
@@ -20,7 +20,7 @@
     </form>
 <main>
         <h2>USUARIOS</h2>
-        <table border='1'>
+        <table width="60%" border='1'>
         <thead>
             <tr>
                 <th>nome</th>
@@ -42,7 +42,7 @@
             </tr>
             @endforeach
         </table>
-        <button type="button" onclick="criarProduto()">Criar novo</button>
+        <button type="button" onclick="criarUsuario()">Criar novo</button>
 </body>
 
 @endsection

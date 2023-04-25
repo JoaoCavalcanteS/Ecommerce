@@ -41,16 +41,18 @@
 </Style>
 <body>
     <div class="container">
-    <form action="/usuario/create" method="post">
+    <form action="/endereco/create" method="post">
         @csrf
-        <label for="">nome</label>
-        <input type="text" name="nome">
-        <label for="">email</label>
-        <input type="text" name="email">
-        <label for="">senha</label>
-        <input type="number" name="senha">
-        <label for="">flAdmin</label>
-        <input type="number" name="flAdmin">
+        <label for="">Usuario:</label>
+        <input type="text" name="usuarioId">
+        <label for="">Endereço</label>
+        <input type="text" name="endereco">
+        <label for="">CEP</label>
+        <input type="text" name="cep">
+        <label for="">N° Residência</label>
+        <input type="number" name="numResidencia">
+        <label for="">Complemento</label>
+        <input type="text" name="complemento">
         <button type="submit">Salvar</button>
     </form>
     </div>

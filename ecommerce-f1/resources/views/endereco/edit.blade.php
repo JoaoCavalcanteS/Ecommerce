@@ -41,18 +41,20 @@
 </Style>
 <body>
     <div class="container">
-    <form action="/usuario/create" method="post">
-        @csrf
-        <label for="">nome</label>
-        <input type="text" name="nome">
-        <label for="">email</label>
-        <input type="text" name="email">
-        <label for="">senha</label>
-        <input type="number" name="senha">
-        <label for="">flAdmin</label>
-        <input type="number" name="flAdmin">
-        <button type="submit">Salvar</button>
-    </form>
+        <form action="/produto/{{$endereco->usuarioId}}/edit" method="post">
+            @csrf
+            <label for="">Usuario:</label>
+            <input type="text" name="usuarioId" disabled='true' value="{{$endereco->usuarioId}}" >
+            <label for="">Endereço</label>
+            <input type="text" name="endereco" value="{{$endereco->endereco}}">
+            <label for="">CEP</label>
+            <input type="text" name="cep" value="{{$endereco->cep}}">
+            <label for="">N° Residência</label>
+            <input type="number" name="numResidencia" value="{{$endereco->numResidencia}}">
+            <label for="">Complemento</label>
+            <input type="text" name="complemento" value="{{$endereco->complemento}}">
+            <button type="submit">Atualizar</button>
+        </form>
     </div>
 </body>
 </html>
