@@ -43,7 +43,6 @@
                     <td>{{$produto->tamanho}}</td>
                     <td>{{$produto->cor}}</td>
                     <td>{{$produto->qtdEstoque}}</td>
-
                     <td>{{$produto->valor}}</td>
                     <td>{{$produto->marca}}</td>
                     <td><button type="button" onclick="atualizarProduto({{$produto->produtoId}})">Atualizar</button></td>
@@ -52,6 +51,7 @@
             @endforeach
         </table>
         <button type="button" onclick="criarProduto()">Criar novo</button>
+
 </body>
 
 @endsection

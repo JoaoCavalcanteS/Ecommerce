@@ -51,7 +51,7 @@
             <span class="title-secundary">Produtos em Destaque</span>
             <hr>
             <div class="row row-cols-1 row-cols-md-4 g-4">
-            @foreach(\App\Models\Produto::all()->take(1) as $produto)
+            @foreach(\App\Models\Produto::all()->take(2) as $produto)
                 <div class="col">
                     <div class="card">
                         <img src="{{$produto->produtoImagem}}" class="card-img-top" alt="...">
@@ -63,7 +63,7 @@
                         </div>
                     </div>
                 </div>
-            @endforeach    
+            @endforeach
 
                 <!-- Segundo Card mais vendidos -->
                 <section class="produtos02">
@@ -105,7 +105,7 @@
                      </section>
 
                      <!-- Terceiro Card -->
-                    
+
                      <section class="produtos">
                         <span class="title-secundary">Outros Produtos</span>
                         <hr>

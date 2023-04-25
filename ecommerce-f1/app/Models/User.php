@@ -21,6 +21,7 @@ class User extends Authenticatable
         'nome',
         'email',
         'senha',
+        'flAdmin'
     ];
 
     /**
@@ -41,4 +42,7 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    protected $table = "USUARIO";
+    protected $primaryKey = "usuarioId";
+    public $timestamps = false;
 }

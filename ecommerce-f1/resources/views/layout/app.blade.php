@@ -45,11 +45,11 @@
                 <li><a href="#">Mais vendidos</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contato</a></li>
-                <li><a href="#">Promoções</a></li>
-                <li><a href="produto">Tabelas</a></li>
+                <li><a href="usuario">Usuarios</a></li>
+                <li><a href="produto">Produtos</a></li>
 
             </ul>
-            @if(!Auth::check())    
+            @if(!Auth::check())
             <div class="main">
 
                 <!-- Arrumar botão transparente de pesquisa -->
@@ -73,7 +73,7 @@
                   </form>
 
                 <span class="user"><i class="ri-user-fill"></i>Olá, {{Auth::user()->USUARIO_NOME}}</span>
-       
+
                 <div class="bx bx-menu" id="menu-icon"></div>
             </div>
             @endif
