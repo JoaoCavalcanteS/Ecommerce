@@ -31,14 +31,14 @@
                 <th>DELETAR</th>
             </tr>
         </thead>
-        @foreach ($usuario as $usuarios)
+        @foreach ($usuarios as $usuario)
             <tr>
-                <td>{{$usuarios->nome}}</td>
-                <td>{{$usuarios->email}}</td>
-                <td>{{$usuarios->senha}}</td>
-                <td>{{$usuarios->flAdmin}}</td>
-                <td><button type="button" onclick="atualizarUsuario({{$usuarios->usuarioId}})">Atualizar</button></td>
-                <td><button type="button" onclick="excluirUsuario({{$usuarios->usuarioId}})">Excluir</button></td>
+                <td>{{$usuario->nome}}</td>
+                <td>{{$usuario->email}}</td>
+                <td>{{$usuario->senha}}</td>
+                <td>{{$usuario->flAdmin}}</td>
+                <td><button type="button" onclick="atualizarUsuario({{$usuario->usuarioId}})">Atualizar</button></td>
+                <td><button type="button" onclick="excluirUsuario({{$usuario->usuarioId}})">Excluir</button></td>
             </tr>
             @endforeach
         </table>

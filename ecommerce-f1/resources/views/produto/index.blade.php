@@ -32,8 +32,6 @@
                 <th>marca</th>
                 <th>ATUALIZAR</th>
                 <th>DELETAR</th>
-
-
             </tr>
         </thead>
             @foreach ($produtos as $produto)

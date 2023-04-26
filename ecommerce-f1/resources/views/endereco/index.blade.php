@@ -4,13 +4,13 @@
         function criarProduto() {
             window.location = `/endereco/create`;
         }
-        function atualizarProduto(idProduto) {
-            window.location = `/endereco/${idProduto}/edit`;
+        function atualizarProduto(usuarioId) {
+            window.location = `/endereco/${usuarioId}/edit`;
         }
-        function excluirProduto(idProduto) {
+        function excluirProduto(usuarioId) {
             if (!confirm("Você tem certeza")) return;
             const form = document.getElementById("deletar");
-            form.setAttribute("action", `/endereco/${idProduto}/destroy`);
+            form.setAttribute("action", `/endereco/${usuarioId}/destroy`);
             form.submit();
             //window.location = `/produto/${idProduto}/destroy`;
         }
@@ -34,15 +34,15 @@
 
             </tr>
         </thead>
-            @foreach ($endereco as $endereco)
+            @foreach ($endereco as $enderecos)
             <tr>
-                    <td>{{$endereco->usuarioId}}</td>
-                    <td>{{$endereco->endereco}}</td>
-                    <td>{{$endereco->cep}}</td>
-                    <td>{{$endereco->numResidencia}}</td>
-                    <td>{{$endereco->complemento}}</td>
-                    <td><button type="button" onclick="atualizarProduto({{$endereco->usuarioId}})">Atualizar</button></td>
-                    <td><button type="button" onclick="excluirProduto({{$endereco->usuarioId}})">Excluir</button></td>
+                <td>{{$enderecos->usuarioId}}</td>
+                <td>{{$enderecos->endereco}}</td>
+                <td>{{$enderecos->cep}}</td>
+                <td>{{$enderecos->numResidencia}}</td>
+                <td>{{$enderecos->complemento}}</td>
+                <td><button type="button" onclick="atualizarProduto({{$enderecos->usuarioId}})">Atualizar</button></td>
+                <td><button type="button" onclick="excluirProduto({{$enderecos->usuarioId}})">Excluir</button></td>
             </tr>
             @endforeach
         </table>

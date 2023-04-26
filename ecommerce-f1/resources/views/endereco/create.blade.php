@@ -7,13 +7,16 @@
     <title>Document</title>
 </head>
 <Style>
-    .container {
-        width: 400px;
+   .container {
+        width: 500px;
         margin: 0 auto;
-        border: 1px solid black;
-        padding: 20px;
+        border: 4px solid black;
+        padding: 50px;
         text-align: center;
-        background-color: aqua;
+        background-color: #6A57B7;
+        font-family:arial;
+        margin-top:10%;
+        font-size:1em;
     }
 
     form {
@@ -35,9 +38,8 @@
     }
 
     input[type="submit"]:hover {
-        background-color: #45a049;
+        background-color: green;
     }
-
 </Style>
 <body>
     <div class="container">

@@ -31,7 +31,7 @@
         <!-- Barra de navegação -->
         <header>
             <!-- Possibilidade de colocar um favcon aqui -->
-            <img  src="/img/logoOficial.png" width="13%"class="logo">
+            <img  src="/img/1.png" width="6%"class="logo">
                 <!-- Favcon -->
                 <!-- <i class="ri-home-heart-fill"></i> -->
                 <!-- Tex0to -->

@@ -9,12 +9,12 @@ use App\Models\Endereco;
 class EnderecoController extends Controller
 {
     public function index(){
-        $endereco = Endereco::all();//retorna todos os usuarios e guarda nessa variavel
+        $enderecos = Endereco::all();//retorna todos os usuarios e guarda nessa variavel
 
-      return view('endereco.index')->with('endereco',$endereco);//retorna a view numa pasta(n pode ser no plural, pois é o q está na model) e o arquivo("".blade.php)
+      return view('endereco.index')->with('endereco',$enderecos);//retorna a view numa pasta(n pode ser no plural, pois é o q está na model) e o arquivo("".blade.php)
     }
 
-    public function show(endereco $endereco){ // model e variavel
+    public function show(Endereco $endereco){ // model e variavel
 
       $categorias = []; //Categoria::find($produto->CATEGORIA_ID)->Produtos;
       return view ('endereco.show', ['endereco' =>$endereco,'categorias' => $categorias]);
@@ -36,9 +36,9 @@ class EnderecoController extends Controller
     }
 
     public function edit (Endereco $endereco){
-      return view ('endereco.edit', ['endereco' => $endereco,'categorias' => []]);
+      return view ('endereco.edit', ['enderecos' => $endereco,'categorias' => []]);
     }
-    public function update(Request $request, Endereco $usuarios){
+    public function update(Request $request, Endereco $endereco){
         $endereco->endereco = $request->endereco;
         $endereco->cep = $request->cep;
         $endereco->numResidencia = $request->numResidencia;
