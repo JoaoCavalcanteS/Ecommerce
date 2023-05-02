@@ -20,7 +20,7 @@
     </form>
 <main>
         <h2>USUARIOS</h2>
-        <table width="60%" border='1'>
+        <table class="tabelaIndex">
         <thead>
             <tr>
                 <th>nome</th>
