@@ -45,7 +45,7 @@
     <div class="container">
     <form action="/endereco/create" method="post">
         @csrf
-        <label for="">Usuario:</label>
+        <label for="">Usuário:</label>
         <input type="text" name="usuarioId">
         <label for="">Endereço</label>
         <input type="text" name="endereco">

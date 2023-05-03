@@ -23,6 +23,7 @@
     <table width="60%" border='1' >
         <thead>
             <tr>
+                <th>EnderecoId</th>
                 <th>UsuarioId</th>
                 <th>Endereço</th>
                 <th>CEP</th>
@@ -36,13 +37,14 @@
         </thead>
             @foreach ($endereco as $enderecos)
             <tr>
+                <td>{{$enderecos->enderecoId}}</td>
                 <td>{{$enderecos->usuarioId}}</td>
                 <td>{{$enderecos->endereco}}</td>
                 <td>{{$enderecos->cep}}</td>
                 <td>{{$enderecos->numResidencia}}</td>
                 <td>{{$enderecos->complemento}}</td>
-                <td><button type="button" onclick="atualizarProduto({{$enderecos->usuarioId}})">Atualizar</button></td>
-                <td><button type="button" onclick="excluirProduto({{$enderecos->usuarioId}})">Excluir</button></td>
+                <td><button type="button" onclick="atualizarProduto({{$enderecos->enderecoId}})">Atualizar</button></td>
+                <td><button type="button" onclick="excluirProduto({{$enderecos->enderecoId}})">Excluir</button></td>
             </tr>
             @endforeach
         </table>

@@ -39,6 +39,7 @@ class EnderecoController extends Controller
       return view ('endereco.edit', ['enderecos' => $endereco,'categorias' => []]);
     }
     public function update(Request $request, Endereco $endereco){
+        $endereco->usuarioId = $request->usuarioId;
         $endereco->endereco = $request->endereco;
         $endereco->cep = $request->cep;
         $endereco->numResidencia = $request->numResidencia;

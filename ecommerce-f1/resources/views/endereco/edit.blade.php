@@ -47,7 +47,9 @@
         <!-- muda pra id do endereço -->
         <form action="/endereco/{{$enderecos->usuarioId}}/edit" method="post">
             @csrf
-            <label for="">Usuario:</label>
+            <label for="">ID:</label>
+            <input type="text" name="usuarioId" disabled='true' value="{{$enderecos->enderecoId}}" >
+            <label for="">Usuário:</label>
             <input type="text" name="usuarioId" disabled='true' value="{{$enderecos->usuarioId}}" >
             <label for="">Endereço</label>
             <input type="text" name="endereco" value="{{$enderecos->endereco}}">
