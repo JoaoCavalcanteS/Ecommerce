@@ -15,9 +15,7 @@ class ProdutoController extends Controller
     }
 
     public function show(Produto $produto){ // model e variavel
-     // dd($produto);
-     // retorna só um produto
-      //return view('produto.show')->with('produto',$produto);
+
       $categorias = []; //Categoria::find($produto->CATEGORIA_ID)->Produtos;
       return view ('produto.show', ['produto' =>$produto,'categorias' => $categorias]);
 

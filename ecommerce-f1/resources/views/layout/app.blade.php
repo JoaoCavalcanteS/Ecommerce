@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Link CSS -->
-    <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="/css/index.css" media="screen"/>
 
 
@@ -23,15 +23,14 @@
 
     <!-- Link do favcon -->
     <link rel="shortcut icon" href="./LOGO/logo-favicon.png" type="image/x-icon">
-
-    <title>Delta</title>
+    <title>E-F1</title>
 </head>
     <body>
 
         <!-- Barra de navegação -->
         <header>
             <!-- Possibilidade de colocar um favcon aqui -->
-            <img  src="/img/logoOficial.png" width="13%"class="logo">
+            <img  src="/img/1.png" width="6%"class="logo">
                 <!-- Favcon -->
                 <!-- <i class="ri-home-heart-fill"></i> -->
                 <!-- Tex0to -->
@@ -44,12 +43,12 @@
                 <li><a href="/" class="active">Home</a></li>
                 <li><a href="#">Mais vendidos</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Promoções</a></li>
-                <li><a href="produto">Tabelas</a></li>
+                <li><a href="usuario">Usuarios</a></li>
+                <li><a href="produto">Produtos</a></li>
+                <li><a href="endereco">Endereços</a></li>
 
             </ul>
-            @if(!Auth::check())    
+            @if(!Auth::check())
             <div class="main">
 
                 <!-- Arrumar botão transparente de pesquisa -->
@@ -73,7 +72,7 @@
                   </form>
 
                 <span class="user"><i class="ri-user-fill"></i>Olá, {{Auth::user()->USUARIO_NOME}}</span>
-       
+
                 <div class="bx bx-menu" id="menu-icon"></div>
             </div>
             @endif
@@ -82,7 +81,7 @@
         <main>@yield('main')</main>
           <!--Floater-->
   <div id="floater">
-                <h2>Delta</h2>
+                <h2>E-F1</h2>
                 <input type="text" placeholder="seu nome">
                 <input type="email" placeholder="seu email">
                 <button id="email">Enviar</button>
