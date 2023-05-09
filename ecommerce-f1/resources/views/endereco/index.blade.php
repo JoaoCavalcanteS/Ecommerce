@@ -15,9 +15,11 @@
             //window.location = `/produto/${idProduto}/destroy`;
         }
     </script>
+
     <form action="" method="POST" id="deletar">
         @csrf
     </form>
+    
 <main>
     <h2>Endereços</h2>
     <table width="60%" border='1' >
@@ -43,12 +45,15 @@
                 <td>{{$enderecos->cep}}</td>
                 <td>{{$enderecos->numResidencia}}</td>
                 <td>{{$enderecos->complemento}}</td>
-                <td><button type="button" onclick="atualizarProduto({{$enderecos->enderecoId}})">Atualizar</button></td>
-                <td><button type="button" onclick="excluirProduto({{$enderecos->enderecoId}})">Excluir</button></td>
+
+                <td><button class="btn btn-primary btn-lg" type="button" onclick="atualizarProduto({{$enderecos->enderecoId}})">Atualizar</button></td>
+
+                <td><button class="btn btn-primary btn-lg" type="button" onclick="excluirProduto({{$enderecos->enderecoId}})">Excluir</button></td>
+
             </tr>
             @endforeach
         </table>
-        <button type="button" onclick="criarProduto()">Criar novo</button>
+        <button class="btn btn-primary btn-lg" type="button" onclick="criarProduto()">Criar novo</button>
 
 </body>
 
