@@ -177,6 +177,7 @@ o tamanho muito grande irá quebrar a página */
 .main{
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .main a{
@@ -191,6 +192,7 @@ o tamanho muito grande irá quebrar a página */
 .user{
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .user i{
@@ -275,6 +277,8 @@ o tamanho muito grande irá quebrar a página */
     border: 1px solid black;
 
 }
+
+
 
 
 

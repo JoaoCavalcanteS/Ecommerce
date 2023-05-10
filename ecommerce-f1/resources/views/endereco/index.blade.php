@@ -21,18 +21,20 @@
     </form>
     
 <main>
-    <h2>Endereços</h2>
-    <table width="60%" border='1' >
-        <thead>
-            <tr>
-                <th>EnderecoId</th>
-                <th>UsuarioId</th>
-                <th>Endereço</th>
-                <th>CEP</th>
-                <th>N° Residência</th>
-                <th>Complemento</th>
-                <th>ATUALIZAR</th>
-                <th>DELETAR</th>
+    <h2>ENDEREÇOS</h2>
+
+    <div class="tabela-ty">
+    <table class="table">
+        <thead class="table-secondary">
+            <tr>    
+                <th scope="col">Nome</th>
+                <th scope="col">Usuario</th>
+                <th scope="col">Endereço</th>
+                <th scope="col">CEP</th>
+                <th scope="col">N° Residência</th>
+                <th scope="col">Complemento</th>
+                <th scope="col">ATUALIZAR</th>
+                <th scope="col">DELETAR</th>
 
 
             </tr>
@@ -46,15 +48,19 @@
                 <td>{{$enderecos->numResidencia}}</td>
                 <td>{{$enderecos->complemento}}</td>
 
-                <td><button class="btn btn-primary btn-lg" type="button" onclick="atualizarProduto({{$enderecos->enderecoId}})">Atualizar</button></td>
+                <td><button class="btn btn-success btn-lg mb-4 p-2 fs-6" type="button" onclick="atualizarProduto({{$enderecos->enderecoId}})">Atualizar</button></td>
 
-                <td><button class="btn btn-primary btn-lg" type="button" onclick="excluirProduto({{$enderecos->enderecoId}})">Excluir</button></td>
+                <td><button class="btn btn-danger btn-lg mb-4 p-2 fs-6" type="button" onclick="excluirProduto({{$enderecos->enderecoId}})">Excluir</button></td>
 
             </tr>
             @endforeach
         </table>
-        <button class="btn btn-primary btn-lg" type="button" onclick="criarProduto()">Criar novo</button>
+        <div class="w-100">
+        <button class="d-flex justify-content-end btn btn-primary btn-lg ms-auto mb-4 p-2 fs-6" type="button" onclick="criarProduto()">Criar novo</button>
+    </div>
+    </div>
 
+ 
 </body>
 
 @endsection

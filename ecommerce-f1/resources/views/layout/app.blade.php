@@ -59,7 +59,7 @@
 
                 <a href="/login" class="user"><i class="ri-user-fill"></i>Fazer Login</a>
 
-                <a href="/register" class="bxmenu">Criar conta</a>
+                <a href="/register" class="user"><i class="ri-trophy-line"></i>Criar conta</a>
                 <div class="bx bx-menu" id="menu-icon"></div>
             </div>
             @else
@@ -81,13 +81,13 @@
         <main>@yield('main')</main>
           <!--Floater-->
   <div id="floater">
-                <h2>E-F1</h2>
+                <h3>E-F1</h3>
                 <input type="text" placeholder="seu nome">
                 <input type="email" placeholder="seu email">
                 <button id="email">Enviar</button>
                 <br><br>
 
-                <h2>Contato</h2>
+                <h3>Contato</h3>
                 <ul>
                   <li>rodriguesdeaguiardaniel@gmail.com</li>
                   <li>joao@gmail.com</li>
