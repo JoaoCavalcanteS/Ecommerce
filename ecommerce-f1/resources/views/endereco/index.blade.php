@@ -27,6 +27,7 @@
     <table class="table">
         <thead class="table-secondary">
             <tr>    
+
                 <th scope="col">Nome</th>
                 <th scope="col">Usuario</th>
                 <th scope="col">Endereço</th>
@@ -35,7 +36,6 @@
                 <th scope="col">Complemento</th>
                 <th scope="col">ATUALIZAR</th>
                 <th scope="col">DELETAR</th>
-
 
             </tr>
         </thead>
@@ -48,9 +48,13 @@
                 <td>{{$enderecos->numResidencia}}</td>
                 <td>{{$enderecos->complemento}}</td>
 
-                <td><button class="btn btn-success btn-lg mb-4 p-2 fs-6" type="button" onclick="atualizarProduto({{$enderecos->enderecoId}})">Atualizar</button></td>
+                <td>
+                    <button class="btn btn-success btn-lg mb-4 p-2 fs-6" type="button" onclick="atualizarProduto({{$enderecos->enderecoId}})">Atualizar</button>
+                </td>
 
-                <td><button class="btn btn-danger btn-lg mb-4 p-2 fs-6" type="button" onclick="excluirProduto({{$enderecos->enderecoId}})">Excluir</button></td>
+                <td>
+                    <button class="btn btn-danger btn-lg mb-4 p-2 fs-6" type="button" onclick="excluirProduto({{$enderecos->enderecoId}})">Excluir</button>
+                </td>
 
             </tr>
             @endforeach

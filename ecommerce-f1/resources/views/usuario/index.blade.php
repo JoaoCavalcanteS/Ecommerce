@@ -20,15 +20,19 @@
     </form>
 <main>
         <h2>USUARIOS</h2>
-        <table class="tabelaIndex">
-        <thead>
+
+        <div class="tabela-ty">
+
+        <table class="table">
+
+        <thead class="table-secondary">
             <tr>
-                <th>nome</th>
-                <th>email</th>
-                <th>senha</th>
-                <th>flAdmin</th>
-                <th>ATUALIZAR</th>
-                <th>DELETAR</th>
+                <th scope="col">nome</th>
+                <th scope="col">email</th>
+                <th scope="col">senha</th>
+                <th scope="col">flAdmin</th>
+                <th scope="col">ATUALIZAR</th>
+                <th scope="col">DELETAR</th>
             </tr>
         </thead>
         @foreach ($usuarios as $usuario)
@@ -37,12 +41,18 @@
                 <td>{{$usuario->email}}</td>
                 <td>{{$usuario->senha}}</td>
                 <td>{{$usuario->flAdmin}}</td>
-                <td><button type="button" onclick="atualizarUsuario({{$usuario->usuarioId}})">Atualizar</button></td>
-                <td><button type="button" onclick="excluirUsuario({{$usuario->usuarioId}})">Excluir</button></td>
+
+                <td><button class="btn btn-success btn-lg mb-4 p-2 fs-6" type="button" onclick="atualizarUsuario({{$usuario->usuarioId}})">Atualizar</button></td>
+
+                <td><button class="btn btn-danger btn-lg mb-4 p-2 fs-6" type="button" onclick="excluirUsuario({{$usuario->usuarioId}})">Excluir</button></td>
             </tr>
             @endforeach
         </table>
-        <button type="button" onclick="criarUsuario()">Criar novo</button>
+
+        <div class="w-100">
+        <button class="d-flex justify-content-end btn btn-primary btn-lg ms-auto mb-2 p-2 fs-6" type="button" onclick="criarProduto()">Criar novo</button>
+        </div>
+        </div>
 </body>
 
 @endsection

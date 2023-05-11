@@ -20,19 +20,22 @@
     </form>
 <main>
     <h2>PRODUTOS</h2>
-    <div>
-        <table class="tabelaIndex">
-            <thead>
+
+    <div class="tabela-ty">
+        <table class="table">
+            <thead class="table-secondary">
                 <tr>
-                    <th>nome</th>
-                    <th>descrição</th>
-                    <th>tamanho</th>
-                    <th>cor</th>
-                    <th>qtdEstoque</th>
-                    <th>valor</th>
-                    <th>marca</th>
-                    <th>ATUALIZAR</th>
-                    <th>DELETAR</th>
+
+                    <th scope="col">Nome</th>
+                    <th scope="col">Descrição</th>
+                    <th scope="col">Tamanho</th>
+                    <th scope="col">Cor</th>
+                    <th scope="col">qtdEstoque</th>
+                    <th scope="col">Valor</th>
+                    <th scope="col">Marca</th>
+                    <th scope="col">ATUALIZAR</th>
+                    <th scope="col">DELETAR</th>
+
                 </tr>
             </thead>
                 @foreach ($produtos as $produto)
@@ -44,13 +47,23 @@
                     <td>{{$produto->qtdEstoque}}</td>
                     <td>{{$produto->valor}}</td>
                     <td>{{$produto->marca}}</td>
-                    <td><button type="button" onclick="atualizarProduto({{$produto->produtoId}})">Atualizar</button></td>
-                    <td><button type="button" onclick="excluirProduto({{$produto->produtoId}})">Excluir</button></td>
+
+                    <td>
+                        <button class="btn btn-success btn-lg mb-4 p-2 fs-6" type="button" onclick="atualizarProduto({{$produto->produtoId}})">Atualizar</button>
+                    </td>
+
+                    <td>
+                        <button class="btn btn-danger btn-lg mb-4 p-2 fs-6" type="button" onclick="excluirProduto({{$produto->produtoId}})">Excluir</button>
+                    </td>
+
                 </tr>
                 @endforeach
             </table>
-        </div>
-        <button type="button" onclick="criarProduto()">Criar novo</button>
+
+        <div class="w-100">
+        <button class="d-flex justify-content-end btn btn-primary btn-lg ms-auto mb-4 p-2 fs-6" type="button" onclick="criarProduto()">Criar novo</button>
+    </div>
+    </div>
 
 </body>
 

@@ -30,7 +30,7 @@
         <!-- Barra de navegação -->
         <header>
             <!-- Possibilidade de colocar um favcon aqui -->
-            <img  src="/img/1.png" width="6%"class="logo">
+            <img class="logo-yt" src="/img/logoef2.png">
                 <!-- Favcon -->
                 <!-- <i class="ri-home-heart-fill"></i> -->
                 <!-- Tex0to -->
@@ -42,7 +42,6 @@
             <ul class="navbar">
                 <li><a href="/" class="active">Home</a></li>
                 <li><a href="#">Mais vendidos</a></li>
-                <li><a href="#">Blog</a></li>
                 <li><a href="usuario">Usuarios</a></li>
                 <li><a href="produto">Produtos</a></li>
                 <li><a href="endereco">Endereços</a></li>
@@ -57,9 +56,9 @@
                     <button class="btn btn-outline-success" type="submit"><i class="ri-search-line"></i></button>
                   </form>
 
-                <a href="/login" class="user"><i class="ri-user-fill"></i>Fazer Login</a>
+                <a href="/login" class="user"><i class="ri-user-fill"></i>Login</a>
 
-                <a href="/register" class="user"><i class="ri-trophy-line"></i>Criar conta</a>
+                <a href="/register" class="user"><i class="ri-trophy-line"></i>Cadastro</a>
                 <div class="bx bx-menu" id="menu-icon"></div>
             </div>
             @else
@@ -93,7 +92,7 @@
                   <li>joao@gmail.com</li>
                 </ul>
 
-                <img  src="./LOGO/imagedelta.png" width="10%">
+                <img class="logo-yt" src="/img/logoef2.png">
               </div>
 
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

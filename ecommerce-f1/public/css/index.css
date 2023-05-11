@@ -51,14 +51,16 @@
     padding: 5%;
 }
 
+/* CSS do FLOATER */
 #floater{
-    background-color: #1C8394;
+    background-color: #040708;
     color:#fff;
     text-align: center;
     margin: 1%;
     padding: 1%;
     bottom: 0%;
 }
+/* FIM */
 
 /*Essa faz com que a lista seja removida*/
 li{
@@ -99,8 +101,8 @@ text-transform: uppercase;
 /* Confirmar o esquema de cores, montar o padrão*/
 :root{
     --bg-color:#fff;
-    --text-color: #1C8394;
-    --main-color: #A52502;
+    --text-color: #25726f;
+    --main-color: #000000;
 }
 
 body{
@@ -123,6 +125,8 @@ header{
     background: transparent;
     padding: 28px 5%;
     transition: all .50s ease;
+    /* border:10px solid black;
+    box-shadow: inset; */
 }
 
 /* Posição da logo */
@@ -266,6 +270,7 @@ o tamanho muito grande irá quebrar a página */
 
 /* Fim NAVBAR */
 
+/* Tabelas de endereço, produto e usuario */
 .pesquisa{
     text-align: center;
 }
@@ -276,6 +281,11 @@ o tamanho muito grande irá quebrar a página */
     margin-left: 25%;
     border: 1px solid black;
 
+}
+
+.logo-yt{
+    width: 4%;
+    border-radius: 15%;
 }
 
 
