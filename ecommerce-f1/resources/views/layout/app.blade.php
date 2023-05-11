@@ -81,8 +81,8 @@
           <!--Floater-->
   <div id="floater">
                 <h3>E-F1</h3>
-                <input type="text" placeholder="seu nome">
-                <input type="email" placeholder="seu email">
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="Email">
                 <button id="email">Enviar</button>
                 <br><br>
 
