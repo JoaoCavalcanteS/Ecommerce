@@ -78,22 +78,66 @@
         </header>
         <!-- FIM NAVBAR -->
         <main>@yield('main')</main>
+
           <!--Floater-->
-  <div id="floater">
-                <h3>E-F1</h3>
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="Email">
-                <button id="email">Enviar</button>
-                <br><br>
-
-                <h3>Contato</h3>
-                <ul>
-                  <li>rodriguesdeaguiardaniel@gmail.com</li>
-                  <li>joao@gmail.com</li>
-                </ul>
-
-                <img class="logo-yt" src="/img/logoef2.png">
-              </div>
+                <footer>
+                    <div class="wrapper">
+                        <div class="footer-box">
+                            <div class="company-footer">
+                                <img class="logo-yt" src="/img/logoef2.png">
+                                <h3>E-F1</h3>
+                                <p>A loja de esportes preferida dos corredores de Formula 1</p>
+                            </div>
+                        </div>
+                        <div class="footer-box">
+                            <div class="articles-footer">
+                                <h3>Artigos</h3>
+                                <ul class="footer-list footer-article-list">
+                                    <li>
+                                        <a href="#">Parcerias</a>
+                                        <span class="article-date">05 de Maio de 2023</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">Parcerias</a>
+                                        <span class="article-date">05 de Maio de 2023</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">Parcerias</a>
+                                        <span class="article-date">05 de Maio de 2023</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-box">
+                                <h3>Nossas Redes</h3>
+                                <ul class="footer-list">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-facebook-square"></i>
+                                            <span>Facebook</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-instagram"></i>
+                                            <span>Instagram</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-youtube"></i>
+                                            <span>Youtube</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="wrapper">
+                            <p>Delta - 2023</p>
+                        </div>
+                    </div>
+                </footer>
 
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>

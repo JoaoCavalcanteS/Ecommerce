@@ -52,14 +52,15 @@
 }
 
 /* CSS do FLOATER */
-#floater{
+/* Desativo por enquanto pois irei testar outro. */
+/* #floater{
     background-color: #0f191c;
     color:#fff;
     text-align: center;
     margin: 1%;
     padding: 1%;
     bottom: 0%;
-}
+} */
 /* FIM */
 
 /*Essa faz com que a lista seja removida*/
@@ -287,6 +288,8 @@ o tamanho muito grande irá quebrar a página */
     width: 4%;
     border-radius: 15%;
 }
+
+
 
 
 
