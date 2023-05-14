@@ -79,60 +79,69 @@
         <!-- FIM NAVBAR -->
         <main>@yield('main')</main>
 
-          <!--Floater-->
+          <!--Footer-->
                 <footer>
                     
                     <div class="wrapper">
                         <div class="footer-box">
                             <div class="company-footer">
-                                <img class="logo-yyt" src="/img/logoef2.png">
+
+                                <img class="logo-yyt" src="/img/logogef1.png">
                                 <h3>E-F1</h3>
                                 <p>A loja de esportes mais amada do Brasil</p>
+                                 
                             </div>
                         </div>
 
                         <div class="footer-box">
                             <div class="articles-footer">
+
                                 <h3>Ultimos artigos</h3>
                                 <ul class="footer-list footer-article-list">
                                     <li>
                                         <a href="#">Parcerias</a>
-                                        <span class="article-date">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, itaque suscipit sapiente omnis, necessitatibus nulla perspiciatis.</span>
+                                        <span class="article-date">Lorem ipsum dolor sit amet.</span>
                                     </li>
+
                                     <li>
                                         <a href="#">Parcerias</a>
-                                        <span class="article-date">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius nihil voluptas sit amet?</span>
-                                    </li>
+                                        <span class="article-date">Lorem ipsum, dolor sit amet.</span>
+                                    </li> 
+
                                     <li>
                                         <a href="#">Parcerias</a>
-                                        <span class="article-date">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi velit alias iusto expedita.</span>
-                                    </li>
+                                        <span class="article-date">Lorem ipsum dolor.</span>
+                                    </li>       
                                 </ul>
                             </div>
+                        </div>
 
-                            <!-- <div class="footer-box">
+                            <div class="footer-box">
                                 <h3>Redes Sociais</h3>
                                 <ul class="footer-list">
                                     <li>
                                         <a href="#">
-                                            <i class="fab fa-facebook-square"></i>
+                                            <!-- Icon facebook -->
+                                            <i class="ri-facebook-box-fill"></i>
                                             <span>Facebook</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="fab fa-instagram"></i>
+                                            <!-- Icon Instagram -->
+                                            <i class="ri-instagram-line"></i>
                                             <span>Instagram</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="fab fa-youtube"></i>
+                                            <!-- Icon youtube -->
+                                            <i class="ri-youtube-fill"></i>
                                             <span>Youtube</span>
                                         </a>
                                     </li>
                                 </ul>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                     <div class="footer-bottom">
