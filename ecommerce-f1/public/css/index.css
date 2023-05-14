@@ -18,12 +18,12 @@
 .carousel-caption {
     position: static;
     width: 100%;
-    background-color: #1C8394;
+    background-color: #cce4f0;
 }
 
 .center-content {
     text-align: center;
-    background-color: #1C8394;
+    background-color: #cce4f0;
     padding: 3%;
 }
 
@@ -284,10 +284,7 @@ o tamanho muito grande irá quebrar a página */
 
 }
 
-.logo-yt{
-    width: 4%;
-    border-radius: 15%;
-}
+
 
 
 

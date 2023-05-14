@@ -116,5 +116,91 @@ th{
     margin: 0;
 }
 
+/* Footer */
+footer{
+    background-color: black;
+    padding-top: 5em;
+    padding-bottom: 40px;
+    border-top: 5px solid #ed2727;
+}
 
+footer h3, footer p, footer a, footer span{
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
+footer h3{
+    font-weight: 500;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer ul{
+    padding: 0;
+}
+
+footer li{
+    list-style: none;
+}
+
+.footer-box{
+    width: 30%;
+    padding: 2%;
+    float: left;
+}
+
+footer .wrapper:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.company-footer{
+    width: 80%;
+}
+
+.company-footer h3{
+    margin-top: 20px;
+}
+
+.company-footer h3, .company-footer p {
+    margin-bottom: 20px;
+}
+
+.footer-list li {
+    margin-bottom: 15px;
+}
+
+.footer-list a {
+    transition: .5s;
+}
+
+.footer-list a:hover {
+    color:#fff;
+}
+
+.footer-list li:after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.logo-yt{
+    width: 4%;
+    border-radius: 15%;
+}
+
+/* Logo footer */
+.logo-yyt{
+    width: 20%;
+}
+
+.articles-footer {
+    width: 80%;
+}
+
+.footer-list.footer-article-list span {
+    display: block;
+}

@@ -30,7 +30,7 @@
         <!-- Barra de navegação -->
         <header>
             <!-- Possibilidade de colocar um favcon aqui -->
-            <img class="logo-yt" src="/img/logoef2.png">
+            <img class="logo-yt" src="/img/logogef1.png">
                 <!-- Favcon -->
                 <!-- <i class="ri-home-heart-fill"></i> -->
                 <!-- Tex0to -->
@@ -81,34 +81,37 @@
 
           <!--Floater-->
                 <footer>
+                    
                     <div class="wrapper">
                         <div class="footer-box">
                             <div class="company-footer">
-                                <img class="logo-yt" src="/img/logoef2.png">
+                                <img class="logo-yyt" src="/img/logoef2.png">
                                 <h3>E-F1</h3>
-                                <p>A loja de esportes preferida dos corredores de Formula 1</p>
+                                <p>A loja de esportes mais amada do Brasil</p>
                             </div>
                         </div>
+
                         <div class="footer-box">
                             <div class="articles-footer">
-                                <h3>Artigos</h3>
+                                <h3>Ultimos artigos</h3>
                                 <ul class="footer-list footer-article-list">
                                     <li>
                                         <a href="#">Parcerias</a>
-                                        <span class="article-date">05 de Maio de 2023</span>
+                                        <span class="article-date">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, itaque suscipit sapiente omnis, necessitatibus nulla perspiciatis.</span>
                                     </li>
                                     <li>
                                         <a href="#">Parcerias</a>
-                                        <span class="article-date">05 de Maio de 2023</span>
+                                        <span class="article-date">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius nihil voluptas sit amet?</span>
                                     </li>
                                     <li>
                                         <a href="#">Parcerias</a>
-                                        <span class="article-date">05 de Maio de 2023</span>
+                                        <span class="article-date">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi velit alias iusto expedita.</span>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="footer-box">
-                                <h3>Nossas Redes</h3>
+
+                            <!-- <div class="footer-box">
+                                <h3>Redes Sociais</h3>
                                 <ul class="footer-list">
                                     <li>
                                         <a href="#">
@@ -129,12 +132,12 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="footer-bottom">
                         <div class="wrapper">
-                            <p>Delta - 2023</p>
+                            <p>@Delta - 2023</p>
                         </div>
                     </div>
                 </footer>
