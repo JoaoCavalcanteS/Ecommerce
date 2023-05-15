@@ -18,6 +18,7 @@
     <form action="" method="POST" id="deletar">
         @csrf
     </form>
+    
 <main>
     <h2>PRODUTOS</h2>
 

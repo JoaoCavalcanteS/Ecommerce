@@ -99,8 +99,16 @@ li {
     font-size: larger;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    
+    margin-top: 4%;
 }
+
+/* .table{
+    margin-top: 5%;
+} */
+
+/* .table-secondary{
+    margin-top: 10%;
+} */
 
 h2{
     text-align: center;
@@ -122,6 +130,7 @@ footer{
     padding-top: 5em;
     padding-bottom: 40px;
     border-top: 5px solid #ed2727;
+    margin-top: 10%;
 }
 
 footer h3, footer p, footer a, footer span {
@@ -219,6 +228,12 @@ footer .wrapper:after {
 /* .footer-bottom p {
     font-weight: 600;
     margin-top: 40px;    
+} */
+
+/* FIM FOOTER */
+
+/* .container{
+    margin-top: 10%;
 } */
 
 
