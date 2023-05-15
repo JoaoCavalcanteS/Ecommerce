@@ -46,7 +46,7 @@
     <div class="container">
     <form action="/produto/{{$produto->produtoId}}/edit" method="post">
         @csrf
-        <label for="">nome</label>
+        <label for="">Nome</label>
         <input type="text" name="nome" value="{{$produto->nome}}">
         <label for="">descrição</label>
         <input type="text" name="descricao" value="{{$produto->descricao}}">

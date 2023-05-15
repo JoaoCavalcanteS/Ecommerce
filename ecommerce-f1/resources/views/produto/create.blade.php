@@ -4,64 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>E-F1</title>
 </head>
 <Style>
-    .container {
-        width: 500px;
-        margin: 0 auto;
-        border: 4px solid black;
-        padding: 50px;
-        text-align: center;
-        background-color: #6A57B7;
-        font-family:arial;
-        margin-top:10%;
-        font-size:1em;
-    }
 
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(45deg,cyan, rgb(51, 92, 224));
+}
 
-    label, input, textarea {
-        margin-bottom: 10px;
-    }
+.login{
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 80px;
+    border-radius: 20px;
+    color:white;
+}
 
-    input[type="submit"] {
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-    }
+.inputLogin{
+    padding: 5px;
+    border:none;
+    outline: none;
+    font-size: 15px;
+    color: black;
+}
 
-    input[type="submit"]:hover {
-        background-color: green;
-    }
+.buttonLogin{
+    background-color: aqua;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color:white;
+    font-size: 15px;    
+}
+
+button:hover{
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+
+.tc-yy{
+    width: 30%;
+    padding: 1%;
+    float: left;
+    margin: 1%;
+}
+
 </Style>
+
 <body>
-    <div class="container">
+    <div class="login">
+        <div class="tc-yy">
     <form action="/produto/create" method="post">
         @csrf
-        <label for="">nome</label>
-        <input type="text" name="nome">
-        <label for="">descrição</label>
-        <input type="text" name="descricao">
-        <label for="">tamanho</label>
-        <input type="text" name="tamanho">
-        <label for="">cor</label>
-        <input type="text" name="cor">
-        <label for="">Qt. Estoque</label>
-        <input type="number" name="qtdEstoque">
-        <label for="">valor</label>
-        <input type="text" name="valor">
-        <label for="">marca</label>
-        <input type="text" name="marca">
-        <label for="">imagem</label>
-        <input type="text" name="produtoImagem">
-        <button type="submit">Salvar</button>
+        <label for="">Nome</label>
+        <input  class="inputLogin" type="text" name="nome">
+        <p></p>
+        <label for="">Descrição</label>
+        <input class="inputLogin" type="text" name="descricao">
+        <p></p>
+        <label for="">Tamanho</label>
+        <input class="inputLogin" type="text" name="tamanho">
+        </div>
+
+        <div class="tc-yy">
+        <label for="">Cor</label>
+        <input class="inputLogin" type="text" name="cor">
+        <p></p>
+        <label for="">Quantida no Estoque</label>
+        <input class="inputLogin" type="number" name="qtdEstoque">
+        <p></p>
+        <label for="">Valor</label>
+        <input class="inputLogin" type="text" name="valor">
+        </div>
+
+        <div class="tc-yy">
+        <label for="">Marca</label>
+        <input class="inputLogin" type="text" name="marca">
+        <p></p>
+        <label for="">Imagem</label>
+        <input class="inputLogin" type="text" name="produtoImagem">
+        <p></p>
+        </div>
+
+        <button class="buttonLogin" type="submit">Salvar</button>
     </form>
     </div>
 </body>
