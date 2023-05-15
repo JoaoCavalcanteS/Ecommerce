@@ -20,12 +20,12 @@ body{
     left:50%;
     transform: translate(-50%,-50%);
     padding: 80px;
-    border-radius: 20px;
+    border-radius: 30px;
     color:white;
 }
 
 .inputLogin{
-    padding: 5px;
+    padding: 10px;
     border:none;
     outline: none;
     font-size: 15px;
@@ -48,17 +48,21 @@ button:hover{
 }
 
 .tc-yy{
-    width: 30%;
-    padding: 1%;
+    width: 25%;
+    padding: 2%;
     float: left;
-    margin: 1%;
+    margin: 2%;
+}
+
+.logo-yyt-log{
+    width: 10%;
 }
 
 </Style>
 
 <body>
+
     <div class="login">
-        <div class="tc-yy">
     <form action="/produto/create" method="post">
         @csrf
         <label for="">Nome</label>
@@ -94,5 +98,6 @@ button:hover{
         <button class="buttonLogin" type="submit">Salvar</button>
     </form>
     </div>
+
 </body>
 </html>
