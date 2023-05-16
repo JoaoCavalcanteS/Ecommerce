@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="/img/logogef1.png"/>
     <title>E-F1</title>
 </head>
@@ -102,7 +103,7 @@ div > label {
             <input class="inputLogin" type="text" name="complemento">
         </div>
 
-        <button class="buttonLogin" type="submit">Salvar</button>
+        <button class="buttonLogin" type="submit">SALVAR <i class="ri-search-line"></i></button>
 
     </form>
 

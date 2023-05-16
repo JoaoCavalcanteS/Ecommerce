@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="/css/index.css" media="screen"/>
 
+    <!-- Icon na barra de navegação -->
+    <link rel="icon" type="image/png" href="/img/logogef1.png"/>
 
     <!-- Link Favicon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
