@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="/img/logogef1.png"/>
     <title>E-F1</title>
 </head>
 <Style>
@@ -20,8 +20,8 @@ body{
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    padding: 80px;
-    border-radius: 30px;
+    padding: 90px;
+    border-radius: 40px;
     color:white;
 }
 
@@ -41,6 +41,7 @@ body{
     border-radius: 10px;
     color:white;
     font-size: 15px;    
+    margin-top:5%;
 }
 
 button:hover{
@@ -56,10 +57,16 @@ button:hover{
 } */
 
 .logo-yyt-log{
-    width: 10%;
+    width: 20%;
+}
+
+div > label {
+    display: block;
+    margin-top:10%;
 }
 
 </Style>
+
 <body>
 
     <div class="login">
@@ -67,18 +74,33 @@ button:hover{
 
     <form action="/endereco/create" method="post">
 
+        <!-- <img class="logo-yyt-log" src="/img/logogef1.png"> -->
+
         @csrf
-        <label for="">Usuário:</label>
-        <input class="inputLogin" type="text" name="usuarioId">
-        <p></p>
-        <label for="">Endereço</label>
-        <input class="inputLogin" type="text" name="endereco">
-        <label for="">CEP</label>
-        <input class="inputLogin" type="text" name="cep">
-        <label for="">N° Residência</label>
-        <input class="inputLogin" type="number" name="numResidencia">
-        <label for="">Complemento</label>
-        <input class="inputLogin" type="text" name="complemento">
+        <div>
+            <label for="">Usuário</label>
+            <input class="inputLogin" type="text" name="usuarioId">
+        </div>
+
+        <div>
+            <label for="">Endereço</label>
+            <input class="inputLogin" type="text" name="endereco">
+        </div>
+
+        <div>
+            <label for="">CEP</label>
+            <input class="inputLogin" type="text" name="cep">
+        </div>
+
+        <div>
+            <label for="">N° Residência</label>
+            <input class="inputLogin" type="number" name="numResidencia">
+        </div>
+
+        <div>
+            <label for="">Complemento</label>
+            <input class="inputLogin" type="text" name="complemento">
+        </div>
 
         <button class="buttonLogin" type="submit">Salvar</button>
 
