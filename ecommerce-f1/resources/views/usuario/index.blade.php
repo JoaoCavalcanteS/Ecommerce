@@ -50,7 +50,7 @@
         </table>
 
         <div class="w-100">
-        <button class="d-flex justify-content-end btn btn-primary btn-lg ms-auto mb-2 p-2 fs-6" type="button" onclick="criarProduto()">Criar novo</button>
+        <button class="d-flex justify-content-end btn btn-primary btn-lg ms-auto mb-2 p-2 fs-6" type="button" onclick="criarUsuario()">Criar novo</button>
         </div>
         </div>
 </body>
