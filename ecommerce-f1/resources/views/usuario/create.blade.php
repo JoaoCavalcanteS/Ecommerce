@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/img/logogef1.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>E-F1</title>
 </head>
 <script>
@@ -15,53 +16,88 @@ function criarUsuario() {
         }
         </script>
 <Style>
-    .container {
-        width: 500px;
-        margin: 0 auto;
-        border: 4px solid black;
-        padding: 50px;
-        text-align: center;
-        background-color: #6A57B7;
-        font-family:arial;
-        margin-top:10%;
-        font-size:1em;
-    }
+    
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(45deg, cyan, rgb(51, 92, 224));
+}
 
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.login{
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 80px;
+    border-radius: 30px;
+    color:white;
+}
 
-    label, input, textarea {
-        margin-bottom: 10px;
-    }
+.inputLogin{
+    padding: 10px;
+    border:none;
+    outline: none;
+    font-size: 15px;
+    color: black;
+}
 
-    input[type="submit"] {
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-    }
+.buttonLogin{
+    background-color: aqua;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color:white;
+    font-size: 15px;    
+    margin-top:5%;
+}
 
-    input[type="submit"]:hover {
-        background-color: green;
-    }
+button:hover{
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+
+.tc-yy{
+    width: 25%;
+    padding: 2%;
+    float: left;
+    margin: 2%;
+}
+
+.logo-yyt-log{
+    width: 10%;
+}
+
+div > label {
+    display: block;
+    margin-top:8%;
+}
 </Style>
 <body>
-    <div class="container">
+    <div class="login">
     <form action="/usuario/create" method="post">
         @csrf
-        <label for="">nome</label>
-        <input type="text" name="nome" require>
-        <label for="">email</label>
-        <input type="text" name="email" require>
-        <label for="">senha</label>
-        <input type="number" name="senha" require>
-        <label for="">flAdmin</label>
-        <input type="number" name="flAdmin" min="0" max="1" require>
-        <button type="submit" onclick="criarUsuario()" >Salvar</button>
+        <div>
+            <label for="">Nome</label>
+            <input class="inputLogin" type="text" name="nome" require>
+        </div>
+
+        <div>
+            <label for="">Email</label>
+            <input class="inputLogin" type="text" name="email" require>
+        </div>
+
+        <div>
+            <label for="">Senha</label>
+            <input class="inputLogin" type="number" name="senha" require>
+        </div>
+
+        <div>
+            <label for="">flAdmin</label>
+            <input class="inputLogin" type="number" name="flAdmin" min="0" max="1" require>
+        </div>
+
+        <button class="buttonLogin" type="submit" onclick="criarUsuario()" >SALVAR <i class="ri-search-line"></i></button>
     </form>
     </div>
 </body>

@@ -51,7 +51,7 @@
             <span class="title-secundary">Produtos em Destaque</span>
             <hr>
             <div class="row row-cols-1 row-cols-md-4 g-4">
-            @foreach(\App\Models\Produto::all()->take(3) as $produto)
+            @foreach(\App\Models\Produto::all()->take(6) as $produto)
                 <div class="col">
                     <div class="card">
                         <img src="{{$produto->produtoImagem}}" class="card-img-top" alt="...">
@@ -104,44 +104,7 @@
                         </section>
                      </section>
 
-                     <!-- Terceiro Card -->
 
-                     <section class="produtos">
-                        <span class="title-secundary">Outros Produtos</span>
-                        <hr>
-                        <div class="row row-cols-1 row-cols-md-3 g-4">
-                            <div class="col">
-                                <div class="card">
-                                    <img src="./IMG/produto01.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Camiseta Esportiva</h5>
-                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae ea sed nesciunt officiis, ut similique natus pariatur dolore iste id harum voluptas doloribus. Totam inventore, aut modi reiciendis</p>
-                                        <button type="submit" id="botaocard">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="./IMG/produto04.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Bicicleta Vermelha</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo inventore quibusdam enim ex quisquam, deleniti alias nihil harum. Asperiores harum modi cumque vel corporis vero quidem nihil laudantium fugiat soluta.</p>
-                                        <button type="submit" id="botaoxp">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="./IMG/produto03.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Bermuda Tactel</h5>
-                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate alias ab voluptatem et distinctio soluta voluptatum animi, sunt laborum iusto repellat veniam accusamus dignissimos sed! Eveniet repellendus vitae sequi molestiae?</p>
-                                        <button type="submit">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                            </section>
 @endsection
 
 
