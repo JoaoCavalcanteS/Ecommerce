@@ -58,7 +58,7 @@
                     <button class="btn btn-outline-success" type="submit"><i class="ri-search-line"></i></button>
                   </form>
 
-                <a href="/login" class="user"><i class="ri-user-fill"></i>Login</a>
+                <a href="user/login" class="user"><i class="ri-user-fill"></i>Login</a>
 
                 <a href="/register" class="user"><i class="ri-trophy-line"></i>Cadastro</a>
                 <div class="bx bx-menu" id="menu-icon"></div>
@@ -83,7 +83,7 @@
 
           <!--Footer-->
                 <footer>
-                    
+
                     <div class="wrapper">
                         <div class="footer-box">
                             <div class="company-footer">
@@ -91,7 +91,7 @@
                                 <img class="logo-yyt" src="/img/logogef1.png">
                                 <h3>E-F1</h3>
                                 <p>A loja de esportes mais amada do Brasil</p>
-                                 
+
                             </div>
                         </div>
 
@@ -108,12 +108,12 @@
                                     <li>
                                         <a href="#">Parcerias</a>
                                         <span class="article-date">Lorem ipsum, dolor sit amet.</span>
-                                    </li> 
+                                    </li>
 
                                     <li>
                                         <a href="#">Parcerias</a>
                                         <span class="article-date">Lorem ipsum dolor.</span>
-                                    </li>       
+                                    </li>
                                 </ul>
                             </div>
                         </div>

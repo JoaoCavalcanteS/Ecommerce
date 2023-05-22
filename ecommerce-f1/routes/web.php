@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProdutoController;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\EnderecoController;
+use App\Http\Controllers\LoginController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -25,6 +26,7 @@ Route::post("/usuario/create", [UsuarioController::class, "store"]);
 Route::get("/usuario/{usuario}/edit", [UsuarioController::class, "edit"]);
 Route::post("/usuario/{usuario}/edit", [UsuarioController::class, "update"]);
 Route::post("/usuario/{usuario}/destroy", [UsuarioController::class, "destroy"]);
+Route::get("/usuario/login", [UsuarioController::class, "login"]);
 
 //ENDEREÇO
 Route::get('/endereco',[EnderecoController::class,'index']);// controllee-class-funcão dentro da controller(site)
@@ -34,3 +36,7 @@ Route::post("/endereco/create", [EnderecoController::class, "store"]);
 Route::get("/endereco/{endereco}/edit", [EnderecoController::class, "edit"]);
 Route::post("/endereco/{endereco}/edit", [EnderecoController::class, "update"]);
 Route::post("/endereco/{endereco}/destroy", [EnderecoController::class, "destroy"]);
+
+Route::get("/user/login", [LoginController::class, "telaLogin"]);
+Route::post("/user/login", [LoginController::class, "login"]);
+Route::post("/user/login", [LoginController::class, "logout"]);
