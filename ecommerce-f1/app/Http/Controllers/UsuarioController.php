@@ -14,10 +14,10 @@ class UsuarioController extends Controller
     public function index(){
         $usuarios = User::all();//retorna todos os usuarios e guarda nessa variavel
 
-            if (!Session::has("usuario")) {
-                return redirect("login");
-            }
-            $usuario = Session::get("usuario");
+            // if (!Session::has("usuario")) {
+            //     return redirect("login");
+            // }
+            // $usuario = Session::get("usuario");
             // $itens = User::all();
             // return view("cliente.index")->with("clientes", $itens)->with("usuario", $usuario);
             return view('usuario.index')->with('usuarios',$usuarios);
