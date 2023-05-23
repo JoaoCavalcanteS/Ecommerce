@@ -15,12 +15,12 @@ class UsuarioController extends Controller
         $usuarios = User::all();//retorna todos os usuarios e guarda nessa variavel
 
             // if (!Session::has("usuario")) {
-            //     return redirect("login");
+            //     return redirect("user.login");
             // }
-            // $usuario = Session::get("usuario");
+            $usuario = Session::get("usuario");
             // $itens = User::all();
             // return view("cliente.index")->with("clientes", $itens)->with("usuario", $usuario);
-            return view('usuario.index')->with('usuarios',$usuarios);
+            return view('usuario.index')->with('usuarios',$usuarios,'usuario',$usuario);
         }
 
     public function show(Usuario $usuario){ // model e variavel

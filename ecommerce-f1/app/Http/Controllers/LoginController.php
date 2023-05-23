@@ -17,7 +17,8 @@ class LoginController extends Controller
         $email = $request->email;
         $senha = $request->senha;
         if ($this->testarLogin($email, $senha)) {
-            Session::put("email", $email);
+            Session::put("usuario", $usuario);
+            $usuario = Session::get("usuario");
             return redirect("usuario/");
         }
         Session::forget("usuario");
