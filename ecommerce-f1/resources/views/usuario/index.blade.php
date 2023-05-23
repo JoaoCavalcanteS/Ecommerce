@@ -19,7 +19,7 @@
         @csrf
     </form>
 <main>
-        <h2>USUARIOS</h2>
+        <h2>USUARIOS - seja bem vindo{{$usuario}}</h2>
 
         <div class="tabela-ty">
 

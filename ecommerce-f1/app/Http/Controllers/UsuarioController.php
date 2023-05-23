@@ -6,15 +6,22 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
-
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Session;
 
 class UsuarioController extends Controller
 {
     public function index(){
         $usuarios = User::all();//retorna todos os usuarios e guarda nessa variavel
 
-      return view('usuario.index')->with('usuarios',$usuarios);//retorna a view numa pasta(n pode ser no plural, pois é o q está na model) e o arquivo("".blade.php)
-    }
+            if (!Session::has("usuario")) {
+                return redirect("login");
+            }
+            $usuario = Session::get("usuario");
+            // $itens = User::all();
+            // return view("cliente.index")->with("clientes", $itens)->with("usuario", $usuario);
+            return view('usuario.index')->with('usuarios',$usuarios);
+        }
 
     public function show(Usuario $usuario){ // model e variavel
 

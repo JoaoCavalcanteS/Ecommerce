@@ -17,7 +17,7 @@ class LoginController extends Controller
         $senha = $request->senha;
         if ($this->testarLogin($email, $senha)) {
             Session::put("email", $email);
-            return redirect("clientes/");
+            return redirect("usuario/");
         }
         Session::forget("usuario");
         return view("user.login")->with("falha", "Usuário ou senha incorretos.");
@@ -25,7 +25,7 @@ class LoginController extends Controller
 
     public function logout(Request $request) {
         Session::forget("usuario");
-        return redirect("/");
+        return redirect("/usuario");
     }
 
     private function testarLogin($email, $senha) {
