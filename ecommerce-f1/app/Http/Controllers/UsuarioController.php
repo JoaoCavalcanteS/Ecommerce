@@ -19,8 +19,7 @@ class UsuarioController extends Controller
             // }
             $usuario = Session::get("usuario");
             // $itens = User::all();
-            // return view("cliente.index")->with("clientes", $itens)->with("usuario", $usuario);
-            return view('usuario.index')->with('usuarios',$usuarios,'usuario',$usuario);
+            return view('usuario.index')->with('usuarios',$usuarios)->with("usuario", $usuario);
         }
 
     public function show(Usuario $usuario){ // model e variavel
