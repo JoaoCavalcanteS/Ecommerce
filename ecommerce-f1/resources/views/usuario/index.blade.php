@@ -19,7 +19,8 @@
         @csrf
     </form>
 <main>
-    @if(Auth::check($usuarios))
+    @if($usuario != null)
+        
         <h2>USUARIOS - seja bem vindo {{$usuario->nome}}</h2>
     @else
     <h2>USUARIOS - seja bem vindo</h2>
