@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Session;
-
+use Illuminate\Support\Facades\Login;
 
 class UsuarioController extends Controller
 {
@@ -21,10 +21,10 @@ class UsuarioController extends Controller
       $usuario = null;
       $auth = Session::get("usuario");
       if($auth != null){
-        
+
         $usuario = User::where('email', $auth['email'])->first();
       }
-      
+
       // $itens = User::all();
       return view('usuario.index')->with('usuarios',$usuarios)->with("usuario", $usuario);
     }
