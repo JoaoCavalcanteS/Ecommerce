@@ -6,17 +6,30 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Session;
 
 
 class UsuarioController extends Controller
 {
     public function index(){
-        $usuarios = User::all();//retorna todos os usuarios e guarda nessa variavel
+      $usuarios = User::all();//retorna todos os usuarios e guarda nessa variavel
 
-      return view('usuario.index')->with('usuarios',$usuarios);//retorna a view numa pasta(n pode ser no plural, pois é o q está na model) e o arquivo("".blade.php)
+      // if (!Session::has("usuario")) {
+      //     return redirect("user.login");
+      // }
+      $usuario = null;
+      $auth = Session::get("usuario");
+      if($auth != null){
+        
+        $usuario = User::where('email', $auth['email'])->first();
+      }
+      
+      // $itens = User::all();
+      return view('usuario.index')->with('usuarios',$usuarios)->with("usuario", $usuario);
     }
 
-    public function show(Usuario $usuario){ // model e variavel
+    public function show(User $usuario){ // model e variavel
 
       $categorias = []; //Categoria::find($produto->CATEGORIA_ID)->Produtos;
       return view ('usuario.show', ['usuario' =>$usuario,'categorias' => $categorias]);
@@ -31,7 +44,7 @@ class UsuarioController extends Controller
       $usuario->email = $request->email;
       $usuario->senha = $request->senha;
       $usuario->flAdmin = $request->flAdmin;
-    $usuario->save();
+      $usuario->save();
 
       return redirect ('usuario');
     }

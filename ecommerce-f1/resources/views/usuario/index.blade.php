@@ -19,8 +19,12 @@
         @csrf
     </form>
 <main>
-        <h2>USUARIOS</h2>
-
+    @if($usuario != null)
+        
+        <h2>USUARIOS - seja bem vindo {{$usuario->nome}}</h2>
+    @else
+    <h2>USUARIOS - seja bem vindo</h2>
+    @endif
         <div class="tabela-ty">
 
         <table class="table">

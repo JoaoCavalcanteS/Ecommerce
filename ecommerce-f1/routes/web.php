@@ -38,5 +38,5 @@ Route::post("/endereco/{endereco}/edit", [EnderecoController::class, "update"]);
 Route::post("/endereco/{endereco}/destroy", [EnderecoController::class, "destroy"]);
 
 Route::get("/user/login", [LoginController::class, "telaLogin"]);
-Route::post("/user/login", [LoginController::class, "login"]);
-Route::post("/user/login", [LoginController::class, "logout"]);
+Route::post("login", [LoginController::class, "login"]);
+Route::post("logout", [LoginController::class, "logout"]);

@@ -20,7 +20,7 @@
     </form>
 
 <main>
-    <h2>PRODUTOS, seja bem vindo{{$usuario}}</h2>
+    <h2>PRODUTOS</h2>
 
     <div class="tabela-ty">
         <table class="table">
