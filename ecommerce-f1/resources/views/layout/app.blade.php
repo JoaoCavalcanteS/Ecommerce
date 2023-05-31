@@ -41,15 +41,16 @@
 
             <!--Lista para classificar itens contidos dentro do menu-->
             <!--Pode ser editavel-->
+            @if($usuario == null)
+            <div>NÃO TÁ LOGADO</div>
             <ul class="navbar">
                 <li><a href="/" class="active">Home</a></li>
                 <li><a href="#">Mais vendidos</a></li>
-                <li><a href="usuario">Usuarios</a></li>
-                <li><a href="produto">Produtos</a></li>
-                <li><a href="endereco">Endereços</a></li>
+                <li><a href="/">Produtos</a></li>
+                <li><a href="/">Categorias</a></li>
+                
 
             </ul>
-            @if(!Auth::check())
             <div class="main">
 
                 <!-- Arrumar botão transparente de pesquisa -->
@@ -63,7 +64,16 @@
                 <a href="/register" class="user"><i class="ri-trophy-line"></i>Cadastro</a>
                 <div class="bx bx-menu" id="menu-icon"></div>
             </div>
-            @else
+            @elseif($usuario->flAdmin!=0)
+            <div>É ADMIN</div>
+            <ul class="navbar">
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="#">Mais vendidos</a></li>
+                <li><a href="usuario">Usuarios</a></li>
+                <li><a href="produto">Produtos</a></li>
+                <li><a href="endereco">Endereços</a></li>
+
+            </ul>
             <div class="main">
 
                 <!-- Arrumar botão transparente de pesquisa -->
@@ -72,7 +82,32 @@
                     <button class="btn btn-outline-success" type="submit"><i class="ri-search-line"></i></button>
                   </form>
 
-                <span class="user"><i class="ri-user-fill"></i>Olá, {{Auth::user()->USUARIO_NOME}}</span>
+                <span class="user"><i class="ri-user-fill"></i>Olá, {{$usuario->nome}}</span>
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                    <button onclick="event.preventDefault();this.closest('form').submit();">Sair</button>
+                </form>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+            @else
+            <div>NÃO É ADMIN</div>
+            <ul class="navbar">
+            <li><a href="/" class="active">Home</a></li>
+                <li><a href="#">Mais vendidos</a></li>
+                <li><a href="/">Produtos</a></li>
+                <li><a href="/">Categorias</a></li>
+                
+
+            </ul>
+            <div class="main">
+
+                <!-- Arrumar botão transparente de pesquisa -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search"  aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><i class="ri-search-line"></i></button>
+                  </form>
+
+                <span class="user"><i class="ri-user-fill"></i>Olá, {{$usuario->nome}}</span>
 
                 <div class="bx bx-menu" id="menu-icon"></div>
             </div>
@@ -148,7 +183,7 @@
                     </div>
                     <div class="footer-bottom">
                         <div class="wrapper">
-                            <p>@Delta - 2023</p>
+                            <p>Delta - 2023</p>
                         </div>
                     </div>
                 </footer>

@@ -32,7 +32,7 @@ class LoginController extends Controller
     private function testarLogin($usuario) {
         //primeiro buscar usuario pelo email
 
-        //se encontrar o usuario validar a senha 
+        //se encontrar o usuario validar a senha
 
         //tudo certo true, senão false
 

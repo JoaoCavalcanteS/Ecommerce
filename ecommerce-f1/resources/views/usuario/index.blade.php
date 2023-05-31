@@ -19,7 +19,7 @@
         @csrf
     </form>
 <main>
-    @if($usuario != null)
+    @if($usuario != null && $usuario->flAdmin>0)
         
         <h2>USUARIOS - seja bem vindo {{$usuario->nome}}</h2>
     @else
@@ -39,16 +39,16 @@
                 <th scope="col">DELETAR</th>
             </tr>
         </thead>
-        @foreach ($usuarios as $usuario)
+        @foreach ($usuarios as $u)
             <tr>
-                <td>{{$usuario->nome}}</td>
-                <td>{{$usuario->email}}</td>
-                <td>{{$usuario->senha}}</td>
-                <td>{{$usuario->flAdmin}}</td>
+                <td>{{$u->nome}}</td>
+                <td>{{$u->email}}</td>
+                <td>{{$u->senha}}</td>
+                <td>{{$u->flAdmin}}</td>
 
-                <td><button class="btn btn-success btn-lg mb-4 p-2 fs-6" type="button" onclick="atualizarUsuario({{$usuario->usuarioId}})">Atualizar</button></td>
+                <td><button class="btn btn-success btn-lg mb-4 p-2 fs-6" type="button" onclick="atualizarUsuario({{$u->usuarioId}})">Atualizar</button></td>
 
-                <td><button class="btn btn-danger btn-lg mb-4 p-2 fs-6" type="button" onclick="excluirUsuario({{$usuario->usuarioId}})">Excluir</button></td>
+                <td><button class="btn btn-danger btn-lg mb-4 p-2 fs-6" type="button" onclick="excluirUsuario({{$u->usuarioId}})">Excluir</button></td>
             </tr>
             @endforeach
         </table>
