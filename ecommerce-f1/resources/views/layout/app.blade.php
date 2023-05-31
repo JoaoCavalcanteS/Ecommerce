@@ -41,13 +41,14 @@
 
             <!--Lista para classificar itens contidos dentro do menu-->
             <!--Pode ser editavel-->
-            @if($usuario != null)
+            @if($usuario == null)
+            <div>NÃO TÁ LOGADO</div>
             <ul class="navbar">
                 <li><a href="/" class="active">Home</a></li>
                 <li><a href="#">Mais vendidos</a></li>
                 <li><a href="/">Produtos</a></li>
-                <li><a href="/">Produtos</a></li>
-                <li><a href="/">Produtos</a></li>
+                <li><a href="/">Categorias</a></li>
+                
 
             </ul>
             <div class="main">
@@ -63,7 +64,8 @@
                 <a href="/register" class="user"><i class="ri-trophy-line"></i>Cadastro</a>
                 <div class="bx bx-menu" id="menu-icon"></div>
             </div>
-            @if($usuario->flAdmin>0)
+            @elseif($usuario->flAdmin!=0)
+            <div>É ADMIN</div>
             <ul class="navbar">
                 <li><a href="/" class="active">Home</a></li>
                 <li><a href="#">Mais vendidos</a></li>
@@ -81,16 +83,20 @@
                   </form>
 
                 <span class="user"><i class="ri-user-fill"></i>Olá, {{$usuario->nome}}</span>
-
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                    <button onclick="event.preventDefault();this.closest('form').submit();">Sair</button>
+                </form>
                 <div class="bx bx-menu" id="menu-icon"></div>
             </div>
             @else
+            <div>NÃO É ADMIN</div>
             <ul class="navbar">
             <li><a href="/" class="active">Home</a></li>
                 <li><a href="#">Mais vendidos</a></li>
                 <li><a href="/">Produtos</a></li>
-                <li><a href="/">Produtos</a></li>
-                <li><a href="/">Produtos</a></li>
+                <li><a href="/">Categorias</a></li>
+                
 
             </ul>
             <div class="main">
@@ -177,7 +183,7 @@
                     </div>
                     <div class="footer-bottom">
                         <div class="wrapper">
-                            <p>@Delta - 2023</p>
+                            <p>Delta - 2023</p>
                         </div>
                     </div>
                 </footer>

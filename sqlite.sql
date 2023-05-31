@@ -13,7 +13,7 @@ CREATE TABLE ENDERECO (
     usuarioId INTEGER NOT NULL,
     endereco TEXT NOT NULL,
     cep TEXT NOT NULL,
-    numResidencia NUMERIC NOT NULL,
+    numResidencia TEXT NOT NULL,
     complemento TEXT NOT NULL,
     FOREIGN KEY (usuarioId) REFERENCES USUARIO (usuarioId)
 );
@@ -40,6 +40,6 @@ CREATE TABLE USUARIO (
     usuarioId INTEGER PRIMARY KEY AUTOINCREMENT,
     nome TEXT NOT NULL,
     email TEXT NOT NULL,
-    senha NUMERIC NOT NULL,
+    senha TEXT NOT NULL,
     flAdmin NUMERIC NOT NULL
 );

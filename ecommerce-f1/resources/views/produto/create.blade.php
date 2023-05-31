@@ -70,7 +70,7 @@ div > label {
 </Style>
 
 <body>
-
+    <div>Olá {{$usuario ? $usuario->nome : "ninguém" }}</div>
     <div class="login">
         <!-- <div class="tc-yy"> -->
     <form action="/produto/create" method="post">
