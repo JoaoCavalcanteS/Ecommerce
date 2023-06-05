@@ -20,8 +20,8 @@
     </form>
 <main>
     @if($usuario != null && $usuario->flAdmin>0)
-        
-        <h2>USUARIOS - seja bem vindo {{$usuario->nome}}</h2>
+
+        <h2>USUARIOS</h2>
     @else
     <h2>USUARIOS - seja bem vindo</h2>
     @endif

@@ -16,62 +16,62 @@ function criarUsuario() {
         }
         </script>
 <Style>
-    
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(45deg, cyan, rgb(51, 92, 224));
-}
 
-.login{
-    background-color: rgba(0,0,0,0.8);
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    padding: 80px;
-    border-radius: 30px;
-    color:white;
-}
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(45deg, cyan, rgb(51, 92, 224));
+    }
 
-.inputLogin{
-    padding: 10px;
-    border:none;
-    outline: none;
-    font-size: 15px;
-    color: black;
-}
+    .login{
+        background-color: rgba(0,0,0,0.8);
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        padding: 80px;
+        border-radius: 30px;
+        color:white;
+    }
 
-.buttonLogin{
-    background-color: aqua;
-    border: none;
-    padding: 15px;
-    width: 100%;
-    border-radius: 10px;
-    color:white;
-    font-size: 15px;    
-    margin-top:5%;
-}
+    .inputLogin{
+        padding: 10px;
+        border:none;
+        outline: none;
+        font-size: 15px;
+        color: black;
+    }
 
-button:hover{
-    background-color: deepskyblue;
-    cursor: pointer;
-}
+    .buttonLogin{
+        background-color: aqua;
+        border: none;
+        padding: 15px;
+        width: 100%;
+        border-radius: 10px;
+        color:white;
+        font-size: 15px;
+        margin-top:5%;
+    }
 
-.tc-yy{
-    width: 25%;
-    padding: 2%;
-    float: left;
-    margin: 2%;
-}
+    button:hover{
+        background-color: deepskyblue;
+        cursor: pointer;
+    }
 
-.logo-yyt-log{
-    width: 10%;
-}
+    .tc-yy{
+        width: 25%;
+        padding: 2%;
+        float: left;
+        margin: 2%;
+    }
 
-div > label {
-    display: block;
-    margin-top:8%;
-}
+    .logo-yyt-log{
+        width: 10%;
+    }
+
+    div > label {
+        display: block;
+        margin-top:8%;
+    }
 </Style>
 <body>
     <div class="login">
@@ -89,12 +89,11 @@ div > label {
 
         <div>
             <label for="">Senha</label>
-            <input class="inputLogin" type="number" name="senha" require>
+            <input class="inputLogin" type="text" name="senha" require>
         </div>
 
         <div>
-            <label for="">flAdmin</label>
-            <input class="inputLogin" type="number" name="flAdmin" min="0" max="1" require>
+            <input class="inputLogin" type="number" name="flAdmin" min="0" max="0" require value=0 hidden>
         </div>
 
         <button class="buttonLogin" type="submit" onclick="criarUsuario()" >SALVAR <i class="ri-search-line"></i></button>

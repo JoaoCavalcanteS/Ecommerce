@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Session;
-
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -19,7 +19,7 @@ class LoginController extends Controller
 
         if ($this->testarLogin($usuario)) {
             Session::put("usuario", $usuario);
-            return redirect("usuario");
+            return redirect("/");
         }
         return view("user.login")->with("falha", "Usuário ou senha incorretos.");
     }
@@ -30,13 +30,16 @@ class LoginController extends Controller
     }
 
     private function testarLogin($usuario) {
-        //primeiro buscar usuario pelo email
+        $credentials = $usuario;
 
-        //se encontrar o usuario validar a senha
+        if (Auth::attempt($credentials)) {
+            // O usuário foi autenticado com sucesso
 
-        //tudo certo true, senão false
+            return true;
+        } else {
+            // As credenciais de login estão incorretas
 
-        // Faça uma autenticação decente ao invés disso!
-        return $usuario["email"] === "joao@gmail.com" && $usuario["senha"] === "123123";
+            return false;
+        };
     }
 }

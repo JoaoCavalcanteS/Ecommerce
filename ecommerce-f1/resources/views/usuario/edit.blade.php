@@ -89,7 +89,7 @@
 
         <div>
             <label for="">flAdmin</label>
-            <input class="inputLogin" type="number" name="flAdmin" value="{{$usuario->flAdmin}}">
+            <input class="inputLogin" type="number" name="flAdmin" min=0 max=1 value="{{$usuario->flAdmin}}" >
         </div>
 
         <button class="buttonLogin" type="submit">Atualizar</button>
